@@ -4,7 +4,7 @@
 
     <item
         app:showAsAction="ifRoom|collapseActionView"
-        app:actionViewClass="android.widget.SearchView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
         android:icon="@drawable/ic_search"
         android:title="Search"
         android:id="@+id/search">
