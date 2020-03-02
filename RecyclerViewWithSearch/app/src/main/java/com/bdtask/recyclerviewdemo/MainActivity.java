@@ -7,7 +7,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.inputmethod.EditorInfo;
-import android.widget.SearchView;
+import androidx.appcompat.widget.SearchView;
+
 
 import java.util.ArrayList;
 import java.util.List;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
 
         MenuItem menuItem = menu.findItem(R.id.search);
         SearchView searchView = (SearchView) menuItem.getActionView();
+        searchView.setQueryHint("Search Here");
 
 
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
